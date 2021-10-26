@@ -3,7 +3,7 @@
 
 const winner = document.getElementById("winner");
 
-//chiedi all'utente un numero tra 1 e 6
+//generare un numero casuale tra 1 e 6 
 const numUser = Math.floor(Math.random() * 6) +1;
 
 console.log("il tuo numero è: ", numUser);
@@ -18,9 +18,9 @@ console.log("il numero casuale è: ", numPc);
 let result;
 
 if(numUser>numPc) {
-    winner.innerHTML = "hai vinto"
+    winner.innerHTML = "hai vinto con " + numUser
 }else if(numUser<numPc) {
-    winner.innerHTML = "ha vinto il pc"
+    winner.innerHTML = "ha vinto il pc con " + numPc
 }else {
     winner.innerHTML = "PARI!!"
 }
